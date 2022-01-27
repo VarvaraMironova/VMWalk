@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="18122" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="18022"/>
+    </dependencies>
+    <scenes>
+        <!--VMWatchStartWalkController-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="VMWatchStartWalkController" hidesWhenLoading="NO" id="AgC-eL-Hgc" customClass="VMWatchStartWalkController" customModule="VMWatchWalk_Extension">
+                    <items>
+                        <button width="1" alignment="center" verticalAlignment="center" title="Start" id="Exv-BK-y2a">
+                            <color key="titleColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
+                            <fontDescription key="font" type="system" weight="semibold" pointSize="24"/>
+                            <connections>
+                                <action selector="onStartWalkButton" destination="AgC-eL-Hgc" id="kIr-dP-Ria"/>
+                                <segue destination="qFy-5h-Bxs" kind="push" identifier="startWalkSegue" id="Bbm-Jm-lPx"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--VMWatchWalkController-->
+        <scene sceneID="8pQ-xP-xk9">
+            <objects>
+                <controller identifier="VMWatchWalkController" id="qFy-5h-Bxs" customClass="VMWatchWalkController" customModule="VMWatchWalk_Extension">
+                    <items>
+                        <group width="1" height="93" alignment="center" layout="vertical" radius="12" spacing="8" id="HNU-ye-EeF">
+                            <items>
+                                <label width="134" height="32" alignment="center" verticalAlignment="bottom" text="0 m" textAlignment="center" id="yoy-Il-tWP">
+                                    <accessibilityTraits key="accessibilityTraits" staticText="YES" updatesFrequently="YES"/>
+                                    <fontDescription key="font" type="system" pointSize="24"/>
+                                </label>
+                                <label width="1" alignment="center" text="00:00:00" textAlignment="center" id="4Tv-vv-Ki2">
+                                    <accessibilityTraits key="accessibilityTraits" staticText="YES" updatesFrequently="YES"/>
+                                    <fontDescription key="font" type="system" pointSize="24"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="16" bottom="0.0"/>
+                        </group>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="End" id="cI8-Hr-xP5">
+                            <color key="titleColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
+                            <fontDescription key="font" type="system" weight="semibold" pointSize="24"/>
+                            <connections>
+                                <action selector="onEndWalkButton" destination="qFy-5h-Bxs" id="Hm5-me-9VF"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="distanceLabel" destination="yoy-Il-tWP" id="XHs-wA-HUu"/>
+                        <outlet property="endWalkButton" destination="cI8-Hr-xP5" id="l1R-QO-WtZ"/>
+                        <outlet property="stopwatchLabel" destination="4Tv-vv-Ki2" id="q2m-q9-YIu"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="537" y="345"/>
+        </scene>
+    </scenes>
+</document>

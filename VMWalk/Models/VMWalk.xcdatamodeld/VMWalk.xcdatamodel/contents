@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20C69" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="VMLocation" representedClassName="VMLocation" syncable="YES" codeGenerationType="class">
+        <attribute name="lat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="long" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="walk" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VMWalk" inverseName="locations" inverseEntity="VMWalk"/>
+    </entity>
+    <entity name="VMWalk" representedClassName="VMWalk" syncable="YES" codeGenerationType="class">
+        <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="stateValue" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="locations" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="VMLocation" inverseName="walk" inverseEntity="VMLocation"/>
+    </entity>
+    <elements>
+        <element name="VMLocation" positionX="-63" positionY="-18" width="128" height="89"/>
+        <element name="VMWalk" positionX="-357.7178955078125" positionY="-10.56558227539062" width="128" height="118"/>
+    </elements>
+</model>

@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D758307D27A0962C00536F75 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758307C27A0962C00536F75 /* ExtensionDelegate.swift */; };
+		D758307F27A0A4FF00536F75 /* VMWatchWalkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758307E27A0A4FF00536F75 /* VMWatchWalkController.swift */; };
+		D758308027A0A57200536F75 /* VMStopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E154BE2799C4DB00AE2086 /* VMStopwatch.swift */; };
+		D758308127A0B4C500536F75 /* VMCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E154C22799F2BB00AE2086 /* VMCoreDataStack.swift */; };
+		D758308227A0B71000536F75 /* VMUnitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E154B72797556900AE2086 /* VMUnitExtensions.swift */; };
+		D758308327A0B71300536F75 /* FormatDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E154B9279774F500AE2086 /* FormatDisplay.swift */; };
+		D7E154902795E5B600AE2086 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E1548F2795E5B600AE2086 /* AppDelegate.swift */; };
+		D7E154922795E5B600AE2086 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E154912795E5B600AE2086 /* SceneDelegate.swift */; };
+		D7E154972795E5B600AE2086 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E154952795E5B600AE2086 /* Main.storyboard */; };
+		D7E1549A2795E5B600AE2086 /* VMWalk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D7E154982795E5B600AE2086 /* VMWalk.xcdatamodeld */; };
+		D7E1549C2795E5BA00AE2086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7E1549B2795E5BA00AE2086 /* Assets.xcassets */; };
+		D7E1549F2795E5BA00AE2086 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E1549D2795E5BA00AE2086 /* LaunchScreen.storyboard */; };
+		D7E154AB27960B7100AE2086 /* VMWalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E154AA27960B7100AE2086 /* VMWalkViewController.swift */; };
+		D7E154AD279618B100AE2086 /* VMEndWalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E154AC279618B100AE2086 /* VMEndWalkViewController.swift */; };
+		D7E154B42796200F00AE2086 /* VMWalkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E154B32796200F00AE2086 /* VMWalkView.swift */; };
+		D7E154B627964F4600AE2086 /* VMEndWalkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E154B527964F4600AE2086 /* VMEndWalkView.swift */; };
+		D7E154B82797556900AE2086 /* VMUnitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E154B72797556900AE2086 /* VMUnitExtensions.swift */; };
+		D7E154BA279774F500AE2086 /* FormatDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E154B9279774F500AE2086 /* FormatDisplay.swift */; };
+		D7E154BD2797788400AE2086 /* VMLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E154BC2797788400AE2086 /* VMLocationManager.swift */; };
+		D7E154BF2799C4DB00AE2086 /* VMStopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E154BE2799C4DB00AE2086 /* VMStopwatch.swift */; };
+		D7E154C12799D9A900AE2086 /* VMWalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E154C02799D9A900AE2086 /* VMWalk.swift */; };
+		D7E154C32799F2BB00AE2086 /* VMCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E154C22799F2BB00AE2086 /* VMCoreDataStack.swift */; };
+		D7E154CA27A0676200AE2086 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E154C827A0676200AE2086 /* Interface.storyboard */; };
+		D7E154CC27A0676400AE2086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7E154CB27A0676400AE2086 /* Assets.xcassets */; };
+		D7E154D327A0676500AE2086 /* VMWatchWalk Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D7E154D227A0676500AE2086 /* VMWatchWalk Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D7E154D827A0676500AE2086 /* VMWatchStartWalkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E154D727A0676500AE2086 /* VMWatchStartWalkController.swift */; };
+		D7E154DC27A0676500AE2086 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E154DB27A0676500AE2086 /* NotificationController.swift */; };
+		D7E154DE27A0676500AE2086 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E154DD27A0676500AE2086 /* ComplicationController.swift */; };
+		D7E154E027A0676500AE2086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7E154DF27A0676500AE2086 /* Assets.xcassets */; };
+		D7E154E527A0676600AE2086 /* VMWatchWalk.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D7E154C627A0676200AE2086 /* VMWatchWalk.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D7E154EE27A068CD00AE2086 /* VMLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E154BC2797788400AE2086 /* VMLocationManager.swift */; };
+		D7E154EF27A068DE00AE2086 /* VMWalk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D7E154982795E5B600AE2086 /* VMWalk.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7E154D427A0676500AE2086 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7E154842795E5B600AE2086 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7E154D127A0676500AE2086;
+			remoteInfo = "VMWatchWalk Extension";
+		};
+		D7E154E327A0676600AE2086 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7E154842795E5B600AE2086 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7E154C527A0676200AE2086;
+			remoteInfo = VMWatchWalk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D7E154E927A0676600AE2086 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D7E154D327A0676500AE2086 /* VMWatchWalk Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7E154ED27A0676600AE2086 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D7E154E527A0676600AE2086 /* VMWatchWalk.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D758307C27A0962C00536F75 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D758307E27A0A4FF00536F75 /* VMWatchWalkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMWatchWalkController.swift; sourceTree = "<group>"; };
+		D7E1548C2795E5B600AE2086 /* VMWalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VMWalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E1548F2795E5B600AE2086 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D7E154912795E5B600AE2086 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D7E154962795E5B600AE2086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7E154992795E5B600AE2086 /* VMWalk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VMWalk.xcdatamodel; sourceTree = "<group>"; };
+		D7E1549B2795E5BA00AE2086 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7E1549E2795E5BA00AE2086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D7E154A02795E5BA00AE2086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7E154AA27960B7100AE2086 /* VMWalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMWalkViewController.swift; sourceTree = "<group>"; };
+		D7E154AC279618B100AE2086 /* VMEndWalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMEndWalkViewController.swift; sourceTree = "<group>"; };
+		D7E154B32796200F00AE2086 /* VMWalkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMWalkView.swift; sourceTree = "<group>"; };
+		D7E154B527964F4600AE2086 /* VMEndWalkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMEndWalkView.swift; sourceTree = "<group>"; };
+		D7E154B72797556900AE2086 /* VMUnitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMUnitExtensions.swift; sourceTree = "<group>"; };
+		D7E154B9279774F500AE2086 /* FormatDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatDisplay.swift; sourceTree = "<group>"; };
+		D7E154BC2797788400AE2086 /* VMLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMLocationManager.swift; sourceTree = "<group>"; };
+		D7E154BE2799C4DB00AE2086 /* VMStopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMStopwatch.swift; sourceTree = "<group>"; };
+		D7E154C02799D9A900AE2086 /* VMWalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMWalk.swift; sourceTree = "<group>"; };
+		D7E154C22799F2BB00AE2086 /* VMCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMCoreDataStack.swift; sourceTree = "<group>"; };
+		D7E154C627A0676200AE2086 /* VMWatchWalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VMWatchWalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E154C927A0676200AE2086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D7E154CB27A0676400AE2086 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7E154CD27A0676400AE2086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7E154D227A0676500AE2086 /* VMWatchWalk Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "VMWatchWalk Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E154D727A0676500AE2086 /* VMWatchStartWalkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMWatchStartWalkController.swift; sourceTree = "<group>"; };
+		D7E154DB27A0676500AE2086 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D7E154DD27A0676500AE2086 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		D7E154DF27A0676500AE2086 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7E154E127A0676500AE2086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7E154E227A0676500AE2086 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7E154892795E5B600AE2086 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7E154CF27A0676500AE2086 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7E154832795E5B600AE2086 = {
+			isa = PBXGroup;
+			children = (
+				D7E1548E2795E5B600AE2086 /* VMWalk */,
+				D7E154C727A0676200AE2086 /* VMWatchWalk */,
+				D7E154D627A0676500AE2086 /* VMWatchWalk Extension */,
+				D7E1548D2795E5B600AE2086 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7E1548D2795E5B600AE2086 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7E1548C2795E5B600AE2086 /* VMWalk.app */,
+				D7E154C627A0676200AE2086 /* VMWatchWalk.app */,
+				D7E154D227A0676500AE2086 /* VMWatchWalk Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7E1548E2795E5B600AE2086 /* VMWalk */ = {
+			isa = PBXGroup;
+			children = (
+				D7E154A62795EE7300AE2086 /* EntryPoint */,
+				D7E154A72795EE9400AE2086 /* Models */,
+				D7E154BB279777E100AE2086 /* Services */,
+				D7E154A82795EE9F00AE2086 /* GUI */,
+				D7E154A92795EECA00AE2086 /* SupportingFiles */,
+			);
+			path = VMWalk;
+			sourceTree = "<group>";
+		};
+		D7E154A62795EE7300AE2086 /* EntryPoint */ = {
+			isa = PBXGroup;
+			children = (
+				D7E154912795E5B600AE2086 /* SceneDelegate.swift */,
+				D7E1548F2795E5B600AE2086 /* AppDelegate.swift */,
+			);
+			path = EntryPoint;
+			sourceTree = "<group>";
+		};
+		D7E154A72795EE9400AE2086 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D7E154982795E5B600AE2086 /* VMWalk.xcdatamodeld */,
+				D7E154C02799D9A900AE2086 /* VMWalk.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D7E154A82795EE9F00AE2086 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				D7E154AF27961FC500AE2086 /* WalkViewController */,
+				D7E154B027961FD800AE2086 /* EndWalkViewController */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		D7E154A92795EECA00AE2086 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D7E154952795E5B600AE2086 /* Main.storyboard */,
+				D7E1549B2795E5BA00AE2086 /* Assets.xcassets */,
+				D7E1549D2795E5BA00AE2086 /* LaunchScreen.storyboard */,
+				D7E154A02795E5BA00AE2086 /* Info.plist */,
+				D7E154B72797556900AE2086 /* VMUnitExtensions.swift */,
+				D7E154B9279774F500AE2086 /* FormatDisplay.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		D7E154AF27961FC500AE2086 /* WalkViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D7E154AA27960B7100AE2086 /* VMWalkViewController.swift */,
+				D7E154B32796200F00AE2086 /* VMWalkView.swift */,
+			);
+			path = WalkViewController;
+			sourceTree = "<group>";
+		};
+		D7E154B027961FD800AE2086 /* EndWalkViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D7E154AC279618B100AE2086 /* VMEndWalkViewController.swift */,
+				D7E154B527964F4600AE2086 /* VMEndWalkView.swift */,
+			);
+			path = EndWalkViewController;
+			sourceTree = "<group>";
+		};
+		D7E154BB279777E100AE2086 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D7E154BC2797788400AE2086 /* VMLocationManager.swift */,
+				D7E154BE2799C4DB00AE2086 /* VMStopwatch.swift */,
+				D7E154C22799F2BB00AE2086 /* VMCoreDataStack.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D7E154C727A0676200AE2086 /* VMWatchWalk */ = {
+			isa = PBXGroup;
+			children = (
+				D7E154C827A0676200AE2086 /* Interface.storyboard */,
+				D7E154CB27A0676400AE2086 /* Assets.xcassets */,
+				D7E154CD27A0676400AE2086 /* Info.plist */,
+			);
+			path = VMWatchWalk;
+			sourceTree = "<group>";
+		};
+		D7E154D627A0676500AE2086 /* VMWatchWalk Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D758307C27A0962C00536F75 /* ExtensionDelegate.swift */,
+				D7E154D727A0676500AE2086 /* VMWatchStartWalkController.swift */,
+				D758307E27A0A4FF00536F75 /* VMWatchWalkController.swift */,
+				D7E154DB27A0676500AE2086 /* NotificationController.swift */,
+				D7E154DD27A0676500AE2086 /* ComplicationController.swift */,
+				D7E154DF27A0676500AE2086 /* Assets.xcassets */,
+				D7E154E127A0676500AE2086 /* Info.plist */,
+				D7E154E227A0676500AE2086 /* PushNotificationPayload.apns */,
+			);
+			path = "VMWatchWalk Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7E1548B2795E5B600AE2086 /* VMWalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7E154A32795E5BA00AE2086 /* Build configuration list for PBXNativeTarget "VMWalk" */;
+			buildPhases = (
+				D7E154882795E5B600AE2086 /* Sources */,
+				D7E154892795E5B600AE2086 /* Frameworks */,
+				D7E1548A2795E5B600AE2086 /* Resources */,
+				D7E154ED27A0676600AE2086 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7E154E427A0676600AE2086 /* PBXTargetDependency */,
+			);
+			name = VMWalk;
+			productName = VMWalk;
+			productReference = D7E1548C2795E5B600AE2086 /* VMWalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D7E154C527A0676200AE2086 /* VMWatchWalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7E154EA27A0676600AE2086 /* Build configuration list for PBXNativeTarget "VMWatchWalk" */;
+			buildPhases = (
+				D7E154C427A0676200AE2086 /* Resources */,
+				D7E154E927A0676600AE2086 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7E154D527A0676500AE2086 /* PBXTargetDependency */,
+			);
+			name = VMWatchWalk;
+			productName = VMWatchWalk;
+			productReference = D7E154C627A0676200AE2086 /* VMWatchWalk.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D7E154D127A0676500AE2086 /* VMWatchWalk Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7E154E627A0676600AE2086 /* Build configuration list for PBXNativeTarget "VMWatchWalk Extension" */;
+			buildPhases = (
+				D7E154CE27A0676500AE2086 /* Sources */,
+				D7E154CF27A0676500AE2086 /* Frameworks */,
+				D7E154D027A0676500AE2086 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VMWatchWalk Extension";
+			productName = "VMWatchWalk Extension";
+			productReference = D7E154D227A0676500AE2086 /* VMWatchWalk Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7E154842795E5B600AE2086 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					D7E1548B2795E5B600AE2086 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					D7E154C527A0676200AE2086 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					D7E154D127A0676500AE2086 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = D7E154872795E5B600AE2086 /* Build configuration list for PBXProject "VMWalk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7E154832795E5B600AE2086;
+			productRefGroup = D7E1548D2795E5B600AE2086 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7E1548B2795E5B600AE2086 /* VMWalk */,
+				D7E154C527A0676200AE2086 /* VMWatchWalk */,
+				D7E154D127A0676500AE2086 /* VMWatchWalk Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7E1548A2795E5B600AE2086 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E1549F2795E5BA00AE2086 /* LaunchScreen.storyboard in Resources */,
+				D7E1549C2795E5BA00AE2086 /* Assets.xcassets in Resources */,
+				D7E154972795E5B600AE2086 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7E154C427A0676200AE2086 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E154CC27A0676400AE2086 /* Assets.xcassets in Resources */,
+				D7E154CA27A0676200AE2086 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7E154D027A0676500AE2086 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E154E027A0676500AE2086 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7E154882795E5B600AE2086 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E154C32799F2BB00AE2086 /* VMCoreDataStack.swift in Sources */,
+				D7E154B42796200F00AE2086 /* VMWalkView.swift in Sources */,
+				D7E154BD2797788400AE2086 /* VMLocationManager.swift in Sources */,
+				D7E154C12799D9A900AE2086 /* VMWalk.swift in Sources */,
+				D7E1549A2795E5B600AE2086 /* VMWalk.xcdatamodeld in Sources */,
+				D7E154902795E5B600AE2086 /* AppDelegate.swift in Sources */,
+				D7E154BF2799C4DB00AE2086 /* VMStopwatch.swift in Sources */,
+				D7E154B82797556900AE2086 /* VMUnitExtensions.swift in Sources */,
+				D7E154AB27960B7100AE2086 /* VMWalkViewController.swift in Sources */,
+				D7E154AD279618B100AE2086 /* VMEndWalkViewController.swift in Sources */,
+				D7E154922795E5B600AE2086 /* SceneDelegate.swift in Sources */,
+				D7E154B627964F4600AE2086 /* VMEndWalkView.swift in Sources */,
+				D7E154BA279774F500AE2086 /* FormatDisplay.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7E154CE27A0676500AE2086 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E154DC27A0676500AE2086 /* NotificationController.swift in Sources */,
+				D7E154EF27A068DE00AE2086 /* VMWalk.xcdatamodeld in Sources */,
+				D758307D27A0962C00536F75 /* ExtensionDelegate.swift in Sources */,
+				D7E154DE27A0676500AE2086 /* ComplicationController.swift in Sources */,
+				D758308227A0B71000536F75 /* VMUnitExtensions.swift in Sources */,
+				D758308127A0B4C500536F75 /* VMCoreDataStack.swift in Sources */,
+				D758308027A0A57200536F75 /* VMStopwatch.swift in Sources */,
+				D7E154D827A0676500AE2086 /* VMWatchStartWalkController.swift in Sources */,
+				D7E154EE27A068CD00AE2086 /* VMLocationManager.swift in Sources */,
+				D758307F27A0A4FF00536F75 /* VMWatchWalkController.swift in Sources */,
+				D758308327A0B71300536F75 /* FormatDisplay.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7E154D527A0676500AE2086 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7E154D127A0676500AE2086 /* VMWatchWalk Extension */;
+			targetProxy = D7E154D427A0676500AE2086 /* PBXContainerItemProxy */;
+		};
+		D7E154E427A0676600AE2086 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7E154C527A0676200AE2086 /* VMWatchWalk */;
+			targetProxy = D7E154E327A0676600AE2086 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D7E154952795E5B600AE2086 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7E154962795E5B600AE2086 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D7E1549D2795E5BA00AE2086 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7E1549E2795E5BA00AE2086 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D7E154C827A0676200AE2086 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7E154C927A0676200AE2086 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7E154A12795E5BA00AE2086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D7E154A22795E5BA00AE2086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7E154A42795E5BA00AE2086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 7JA4Q6L7YY;
+				INFOPLIST_FILE = VMWalk/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.varvaraMyronova.VMWalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D7E154A52795E5BA00AE2086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 7JA4Q6L7YY;
+				INFOPLIST_FILE = VMWalk/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.varvaraMyronova.VMWalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D7E154E727A0676600AE2086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7JA4Q6L7YY;
+				INFOPLIST_FILE = "VMWatchWalk Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.varvaraMyronova.VMWalk.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		D7E154E827A0676600AE2086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7JA4Q6L7YY;
+				INFOPLIST_FILE = "VMWatchWalk Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.varvaraMyronova.VMWalk.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		D7E154EB27A0676600AE2086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7JA4Q6L7YY;
+				IBSC_MODULE = VMWatchWalk_Extension;
+				INFOPLIST_FILE = VMWatchWalk/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.varvaraMyronova.VMWalk.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		D7E154EC27A0676600AE2086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7JA4Q6L7YY;
+				IBSC_MODULE = VMWatchWalk_Extension;
+				INFOPLIST_FILE = VMWatchWalk/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.varvaraMyronova.VMWalk.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7E154872795E5B600AE2086 /* Build configuration list for PBXProject "VMWalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7E154A12795E5BA00AE2086 /* Debug */,
+				D7E154A22795E5BA00AE2086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7E154A32795E5BA00AE2086 /* Build configuration list for PBXNativeTarget "VMWalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7E154A42795E5BA00AE2086 /* Debug */,
+				D7E154A52795E5BA00AE2086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7E154E627A0676600AE2086 /* Build configuration list for PBXNativeTarget "VMWatchWalk Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7E154E727A0676600AE2086 /* Debug */,
+				D7E154E827A0676600AE2086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7E154EA27A0676600AE2086 /* Build configuration list for PBXNativeTarget "VMWatchWalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7E154EB27A0676600AE2086 /* Debug */,
+				D7E154EC27A0676600AE2086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D7E154982795E5B600AE2086 /* VMWalk.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D7E154992795E5B600AE2086 /* VMWalk.xcdatamodel */,
+			);
+			currentVersion = D7E154992795E5B600AE2086 /* VMWalk.xcdatamodel */;
+			path = VMWalk.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D7E154842795E5B600AE2086 /* Project object */;
+}

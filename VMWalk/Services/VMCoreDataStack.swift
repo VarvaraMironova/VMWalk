@@ -1,0 +1,39 @@
+//
+//  VMCoreDataStack.swift
+//  VMWalk
+//
+//  Created by Varvara Myronova on 20.01.2022.
+//
+
+import CoreData
+
+class VMCoreDataStack {
+    
+    static let persistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "VMWalk")
+        container.loadPersistentStores { (_, error) in
+            if let error = error as NSError? {
+                fatalError("Unresolved error \(error), \(error.userInfo)")
+            }
+        }
+        
+        return container
+    }()
+  
+    static var context: NSManagedObjectContext { return persistentContainer.viewContext }
+  
+    class func saveContext () {
+        let context = persistentContainer.viewContext
+    
+        guard context.hasChanges else {
+            return
+        }
+    
+        do {
+            try context.save()
+        } catch {
+            let nserror = error as NSError
+            fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+        }
+    }
+}
